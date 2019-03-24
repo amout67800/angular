@@ -2,7 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatTableModule, MatPaginatorModule, MatSelectModule, MatInputModule, MatMenuModule, MatFormFieldModule, MatCheckboxModule, MatRadioModule, MatIconModule } from '@angular/material';
+// import { MatButtonModule, MatTableModule, MatPaginatorModule, MatSelectModule, MatInputModule, MatMenuModule, MatFormFieldModule, MatCheckboxModule, MatRadioModule, MatIconModule } from '@angular/material';
+import { MaterialModule } from './material.module';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -48,17 +49,18 @@ import { PlaceCreateComponent } from './common/components/place-create/place-cre
     BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,
-    MatButtonModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatSelectModule,
-    MatInputModule,
-    MatMenuModule,
-    MatFormFieldModule,
-    MatCheckboxModule, 
-    MatRadioModule,
-    MatIconModule,
-    HttpClientModule
+    // MatButtonModule,
+    // MatTableModule,
+    // MatPaginatorModule,
+    // MatSelectModule,
+    // MatInputModule,
+    // MatMenuModule,
+    // MatFormFieldModule,
+    // MatCheckboxModule, 
+    // MatRadioModule,
+    // MatIconModule,
+    HttpClientModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
