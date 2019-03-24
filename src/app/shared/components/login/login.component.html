@@ -1,0 +1,10 @@
+<div class="login-content">
+  <button mat-button (click)="displaySignContent('sign-in')">SIGN IN</button> |
+  <button mat-button (click)="displaySignContent('sign-up')">SIGN UP</button>
+  <div [ngSwitch]="choice">
+    <app-sign-in *ngSwitchCase="'sign-in'"></app-sign-in>
+    <app-sign-up *ngSwitchCase="'sign-up'"></app-sign-up>
+    <app-forget-password *ngSwitchCase="'forget-pwd'"></app-forget-password>
+  </div>
+  <a class="forget-pw" (click)="displaySignContent('forget-pwd')">Forget password ?</a>
+</div>

@@ -1,0 +1,13 @@
+.sign-up-form {
+  min-width: 150px;
+  max-width: 280px;
+  width: 280px;
+  margin: auto;
+} 
+.sign-up-full-width {
+  width: 100%;
+  font-size: 14px;
+}
+.sign-up-btn {
+  text-align: left;
+}

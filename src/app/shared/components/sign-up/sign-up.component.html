@@ -1,0 +1,45 @@
+<form
+  [formGroup]="signUpForm" 
+  (ngSubmit)="onSubmit()"
+  class="sign-up-form">
+  <mat-form-field class="sign-up-full-width">
+    <input 
+      matInput 
+      placeholder="Email"
+      formControlName="email">
+  </mat-form-field>
+  <br>
+  <mat-form-field class="sign-up-full-width">
+    <input 
+      matInput 
+      placeholder="User name"
+      formControlName="username">
+  </mat-form-field>
+  <br>
+  <mat-form-field class="sign-up-full-width">
+    <input 
+      matInput 
+      placeholder="Enter your password" 
+      [type]="hide ? 'password' : 'text'"
+      formControlName="password">
+    <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+  </mat-form-field>
+  <br>
+  <mat-form-field class="sign-up-full-width">
+    <input 
+      matInput 
+      placeholder="Verify your password" 
+      [type]="hideVerif ? 'password' : 'text'"
+      formControlName="passwordControl">
+    <mat-icon matSuffix (click)="hideVerif = !hideVerif">{{hideVerif ? 'visibility_off' : 'visibility'}}</mat-icon>
+  </mat-form-field>
+  <br>
+  <div class="sign-up-btn">
+    <button
+      mat-raised-button color="primary"
+      [disabled]="!signUpForm.valid"
+      type="submit">
+      Sign Up
+    </button>
+  </div>
+</form>

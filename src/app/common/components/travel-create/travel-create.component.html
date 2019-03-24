@@ -1,0 +1,54 @@
+<form [formGroup]="travelForm" (ngSubmit)="onSubmit()">
+  <mat-form-field class="travel-full-width">
+    <label>
+      * Name :
+      <input matInput formControlName="name">
+    </label>
+  </mat-form-field>
+  <br>
+  <mat-form-field class="travel-full-width">
+    <mat-select placeholder="* Country"
+    formControlName="country">
+      <mat-option 
+        *ngFor="let country of countries"
+        [value]="country.name">
+        {{ country.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br>
+  <mat-form-field class="travel-full-width">
+    <label>
+      Description :
+      <textarea matInput formControlName="description"></textarea>
+    </label>
+  </mat-form-field>
+  <br>
+  <mat-form-field class="travel-full-width">
+    <label>
+      * Days number :
+      <input matInput formControlName="daysNumber">
+    </label>
+  </mat-form-field>
+  <br>
+  <mat-form-field class="travel-full-width">
+    <label>
+      * Nights number :
+      <input matInput formControlName="nightsNumber">
+    </label>
+  </mat-form-field>
+  <br>
+  <mat-form-field class="travel-full-width">
+    <label>
+      Places (max) :
+      <input matInput formControlName="maxPlaces">
+    </label>
+  </mat-form-field>
+  <br>
+  <button 
+    mat-raised-button color="primary"
+    type="submit" 
+    [disabled]="!travelForm.valid">
+    Submit
+  </button>
+</form>

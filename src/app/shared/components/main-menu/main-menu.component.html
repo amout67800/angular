@@ -1,0 +1,25 @@
+<div id="main-row">
+  <button mat-menu-item [matMenuTriggerFor]="travels">Travels</button>
+  <button mat-menu-item [matMenuTriggerFor]="users">Users</button>
+  <button mat-menu-item [matMenuTriggerFor]="account">Login</button>
+  <button mat-menu-item [matMenuTriggerFor]="places">Places management</button>
+  <button mat-menu-item [matMenuTriggerFor]="other3">Other</button>
+</div>
+
+<mat-menu #travels="matMenu">
+  <button mat-menu-item routerLink="/travels" routerLinkActive="active">Travels List</button>
+</mat-menu>
+<mat-menu #users="matMenu">
+  <button mat-menu-item routerLink="/users" routerLinkActive="active">Users List</button>
+</mat-menu>
+<mat-menu #account="matMenu">
+  <button mat-menu-item routerLink="/login" routerLinkActive="active">Login</button>
+</mat-menu>
+<mat-menu #places="matMenu">
+  <button mat-menu-item routerLink="/places" routerLinkActive="active">Places list</button>
+  <button mat-menu-item routerLink="/place/create" routerLinkActive="active">New place</button>
+</mat-menu>
+<mat-menu #other3="matMenu">
+  <button mat-menu-item>List</button>
+  <button mat-menu-item>New</button>
+</mat-menu>

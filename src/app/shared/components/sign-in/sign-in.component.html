@@ -1,0 +1,28 @@
+<form 
+  [formGroup]="signInForm" 
+  (ngSubmit)="onSubmit()" 
+  class="sign-in-form">
+  <mat-form-field class="sign-in-full-width">
+    <input 
+      matInput 
+      placeholder="Username"
+      type="text"
+      formControlName="username">
+  </mat-form-field>
+  <br>
+  <mat-form-field class="sign-in-full-width">
+    <input 
+      matInput 
+      placeholder="Password" 
+      type="password"
+      formControlName="password">
+  </mat-form-field>
+  <div class="sign-in-btn">
+    <button 
+      mat-raised-button color="primary"
+      [disabled]="!signInForm.valid"
+      type="submit">
+      Sign In
+    </button>
+  </div>
+</form>

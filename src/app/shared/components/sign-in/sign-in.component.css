@@ -1,0 +1,13 @@
+.sign-in-form {
+  min-width: 150px;
+  max-width: 280px;
+  width: 280px;
+  margin: auto;
+} 
+.sign-in-full-width {
+  width: 100%;
+  font-size: 14px;
+}
+.sign-in-btn {
+  text-align: left;
+}

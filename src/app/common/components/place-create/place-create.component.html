@@ -1,0 +1,43 @@
+<form
+  [formGroup]="placeForm" 
+  (ngSubmit)="onSubmit()">
+
+  <mat-form-field>
+    <input 
+      matInput 
+      placeholder="* Name"
+      formControlName="name">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input 
+      matInput 
+      placeholder="* Description"
+      formControlName="description">
+  </mat-form-field>
+  <mat-form-field>
+    <input 
+      matInput 
+      placeholder="* City"
+      formControlName="city">
+  </mat-form-field>
+  <mat-form-field>
+    <input 
+      matInput 
+      placeholder="Latitude"
+      formControlName="lat">
+  </mat-form-field>
+  <mat-form-field>
+    <input 
+      matInput 
+      placeholder="Longitude"
+      formControlName="long">
+  </mat-form-field>
+
+  <button
+    mat-raised-button color="primary"
+    [disabled]="!placeForm.valid"
+    type="submit">
+    Create
+  </button>
+</form>

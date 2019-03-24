@@ -1,0 +1,8 @@
+#main-row {
+  width: 100%; 
+}
+#main-row button {
+  float: left; 
+  width: 20%; 
+  text-align: center;
+}
