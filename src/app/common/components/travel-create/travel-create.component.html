@@ -7,8 +7,7 @@
   </mat-form-field>
   <br>
   <mat-form-field class="travel-full-width">
-    <mat-select placeholder="* Country"
-    formControlName="country">
+    <mat-select placeholder="* Country" formControlName="country">
       <mat-option 
         *ngFor="let country of countries"
         [value]="country.name">
