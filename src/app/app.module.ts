@@ -16,13 +16,11 @@ import { TravelsListComponent } from './common/components/travels-list/travels-l
 import { AdminAccountCreateComponent } from './common/components/admin-account-create/admin-account-create.component';
 import { MessagesComponent } from './common/components/messages/messages.component';
 import { LoginComponent } from './shared/components/login/login.component';
-import { TravelCreateComponent } from './common/components/travel-create/travel-create.component';
 import { HomeComponent } from './common/components/home/home.component';
 import { SignInComponent } from './shared/components/sign-in/sign-in.component';
 import { SignUpComponent } from './shared/components/sign-up/sign-up.component';
 import { ForgetPasswordComponent } from './shared/components/forget-password/forget-password.component';
 import { PlacesListComponent } from './common/components/places-list/places-list.component';
-import { PlaceCreateComponent } from './common/components/place-create/place-create.component';
 import { ActionsButtonsComponent, ActionsButtonsDialog } from './shared/components/actions-buttons/actions-buttons.component';
 import { TravelComponent } from './common/components/travel/travel.component';
 import { PlaceComponent } from './common/components/place/place.component';
@@ -37,13 +35,11 @@ import { PlaceComponent } from './common/components/place/place.component';
     AdminAccountCreateComponent,
     MessagesComponent,
     LoginComponent,
-    TravelCreateComponent,
     HomeComponent,
     SignInComponent,
     SignUpComponent,
     ForgetPasswordComponent,
     PlacesListComponent,
-    PlaceCreateComponent,
     ActionsButtonsComponent,
     ActionsButtonsDialog,
     TravelComponent,
