@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { MatButtonModule, MatTableModule, MatPaginatorModule, MatSelectModule, MatInputModule, MatMenuModule, MatFormFieldModule, MatCheckboxModule, MatRadioModule, MatIconModule } from '@angular/material';
 import { MaterialModule } from './material.module';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -24,6 +23,9 @@ import { SignUpComponent } from './shared/components/sign-up/sign-up.component';
 import { ForgetPasswordComponent } from './shared/components/forget-password/forget-password.component';
 import { PlacesListComponent } from './common/components/places-list/places-list.component';
 import { PlaceCreateComponent } from './common/components/place-create/place-create.component';
+import { ActionsButtonsComponent, ActionsButtonsDialog } from './shared/components/actions-buttons/actions-buttons.component';
+import { TravelComponent } from './common/components/travel/travel.component';
+import { PlaceComponent } from './common/components/place/place.component';
 
 @NgModule({
   declarations: [
@@ -41,24 +43,19 @@ import { PlaceCreateComponent } from './common/components/place-create/place-cre
     SignUpComponent,
     ForgetPasswordComponent,
     PlacesListComponent,
-    PlaceCreateComponent
+    PlaceCreateComponent,
+    ActionsButtonsComponent,
+    ActionsButtonsDialog,
+    TravelComponent,
+    PlaceComponent
   ],
+  entryComponents: [ActionsButtonsDialog],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,
-    // MatButtonModule,
-    // MatTableModule,
-    // MatPaginatorModule,
-    // MatSelectModule,
-    // MatInputModule,
-    // MatMenuModule,
-    // MatFormFieldModule,
-    // MatCheckboxModule, 
-    // MatRadioModule,
-    // MatIconModule,
     HttpClientModule,
     MaterialModule
   ],
