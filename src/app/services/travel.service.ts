@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
-import { Travel } from '../classes/travel';
+import { Travel } from '../shared/classes/travel';
 import { TRAVELS } from 'src/app/mocks/mock-travels';
 
 
@@ -11,7 +10,7 @@ export class TravelService {
 
   constructor() { }
 
-  getTravels(): Observable<Travel[]> {
-    return of(TRAVELS);
+  getTravels(): Travel[] {
+    return TRAVELS;
   }
 }

@@ -6,7 +6,7 @@
     *ngIf="buttons[0].visibility === true"
     class="new-btn" 
     mat-raised-button 
-    routerLink="{{addLink}}" 
+    routerLink="{{newButton}}" 
     routerLinkActive="active">
     New
   </button>
@@ -29,10 +29,19 @@
     <table mat-table [dataSource]="dataSource">
       <ng-container matColumnDef="actions">
         <th mat-header-cell *matHeaderCellDef>Actions</th>
-        <td mat-cell *matCellDef="let element">
-          <div *ngFor="let button of buttons | slice:1; let i = index;" class="rowHeight">
-            <button *ngIf="button.visibility" mat-stroked-button>{{button.label}}</button>
-          </div>
+        <td mat-cell *matCellDef="let element" style='height: 51px; line-height: 51px;'>
+          <!-- <div *ngFor="let button of buttons | slice:1; let i = index;" class="rowHeight">
+            <button *ngIf="button.visibility" mat-stroked-button>{{button.label}} - {{element.id}}</button>
+          </div> -->
+          <app-actions-buttons [id]="element.id"></app-actions-buttons>
+          <!--
+            actionsButtons: any[] = [
+              { name : 'edit',    label: 'Edit',    visibility: 'true',   route: 'travel' },
+              { name : 'details', label: 'Details', visibility: 'true',   route: 'travel' },
+              { name : 'delete',  label: 'Delete',  visibility: 'true',   route: 'travel' }
+            ];
+            le parent envoie l'id
+          -->
         </td>
       </ng-container>
       <tr mat-header-row *matHeaderRowDef="displayedActions"></tr>

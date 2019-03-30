@@ -11,7 +11,7 @@ export class TableComponent implements OnInit {
   @Input() columns: any[];
   @Input() actions: any[];
   @Input() buttons: any[];
-  @Input() addTravel: string;
+  @Input() newButton: string;
   @ViewChild(MatPaginator) paginator: MatPaginator;
   displayedColumns: string[];
   displayedActions: string[];

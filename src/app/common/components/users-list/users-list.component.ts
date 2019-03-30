@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material';
-import { USERS } from 'src/app/mocks/mock-users';
 import { User } from 'src/app/shared/classes/user';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-users-list',
@@ -27,10 +27,16 @@ export class UsersListComponent implements OnInit {
     { name: 'edit',    label: 'Edit',    visibility: true },
     { name: 'del',     label: 'Delete',  visibility: true }
   ];
-  dataSource = new MatTableDataSource(USERS);
+  dataSource: any;
 
-  constructor() { }
+  constructor(private userService: UserService) { }
 
   ngOnInit() {
+    this.getUsers();
+    this.dataSource = new MatTableDataSource(this.users);
+  }
+
+  getUsers(): void {
+    this.users = this.userService.getUsers();
   }
 }

@@ -14,7 +14,7 @@ import { MainMenuComponent } from './shared/components/main-menu/main-menu.compo
 import { UsersListComponent } from './common/components/users-list/users-list.component';
 import { TravelsListComponent } from './common/components/travels-list/travels-list.component';
 import { AdminAccountCreateComponent } from './common/components/admin-account-create/admin-account-create.component';
-import { MessagesComponent } from './common/components/messages/messages.component';
+import { MessagesComponent } from './shared/components/messages/messages.component';
 import { LoginComponent } from './shared/components/login/login.component';
 import { HomeComponent } from './common/components/home/home.component';
 import { SignInComponent } from './shared/components/sign-in/sign-in.component';

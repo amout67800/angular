@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { PLACES } from './../../../mocks/mock-places';
 import { MatTableDataSource } from '@angular/material';
 import { Place } from 'src/app/shared/classes/place';
+import { PlaceService } from 'src/app/services/place.service';
 
 @Component({
   selector: 'app-places-list',
@@ -20,10 +20,16 @@ export class PlacesListComponent implements OnInit {
     { name: 'city',     label: 'City' },
     { name: 'name',     label: 'Name' }
   ];
-  dataSource = new MatTableDataSource(PLACES);
+  dataSource: any;
 
-  constructor() { }
+  constructor(private placeService: PlaceService) { }
 
   ngOnInit() {
+    this.getPlaces();
+    this.dataSource = new MatTableDataSource(this.places);
+  }
+
+  getPlaces(): void {
+    this.places = this.placeService.getPlaces();
   }
 }
