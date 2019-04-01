@@ -1,1 +1,5 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.ck-editor__editable {
+    min-height: 200px !important;
+}

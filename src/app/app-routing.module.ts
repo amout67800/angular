@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { TableComponent } from './shared/components/table/table.component';
-import { TravelsListComponent } from './common/components/travels-list/travels-list.component';
-import { UsersListComponent } from './common/components/users-list/users-list.component';
-import { TravelComponent } from './common/components/travel/travel.component';
-import { HomeComponent } from './common/components/home/home.component';
+import { TravelsListComponent } from './public/components/travels-list/travels-list.component';
+import { UsersListComponent } from './public/components/users-list/users-list.component';
+import { TravelComponent } from './public/components/travel/travel.component';
+import { HomeComponent } from './public/components/home/home.component';
 import { LoginComponent } from './shared/components/login/login.component';
-import { PlacesListComponent } from './common/components/places-list/places-list.component';
-import { PlaceComponent } from './common/components/place/place.component';
+import { PlacesListComponent } from './public/components/places-list/places-list.component';
+import { PlaceComponent } from './public/components/place/place.component';
+import { ArticleComponent } from './public/components/article/article.component';
 
 const appRoutes: Routes = [
   { path: 'table', component: TableComponent },
@@ -17,6 +18,7 @@ const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'places', component: PlacesListComponent },
   { path: 'place/create', component: PlaceComponent },
+  { path: 'article', component: ArticleComponent },
   { path: 'home', component: HomeComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];

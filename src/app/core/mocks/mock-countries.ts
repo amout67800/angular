@@ -1,4 +1,4 @@
-import { Country } from '../shared/classes/country';
+import { Country } from '../classes/country';
 
 export const COUNTRIES: Country[] = [
   { id: 1, name: 'Afghanistan' },

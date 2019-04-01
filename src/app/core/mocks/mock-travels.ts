@@ -1,4 +1,4 @@
-import { Travel } from '../shared/classes/travel';
+import { Travel } from '../classes/travel';
 
 export const TRAVELS: Travel[] = [
   { id: 1,  country: 'France',   name: 'Voyage incroyable en France' },

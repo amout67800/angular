@@ -3,7 +3,7 @@
   <button mat-menu-item [matMenuTriggerFor]="users">Users</button>
   <button mat-menu-item [matMenuTriggerFor]="account">Login</button>
   <button mat-menu-item [matMenuTriggerFor]="places">Places management</button>
-  <button mat-menu-item [matMenuTriggerFor]="other3">Other</button>
+  <button mat-menu-item [matMenuTriggerFor]="article">Article</button>
 </div>
 
 <mat-menu #travels="matMenu">
@@ -19,7 +19,6 @@
   <button mat-menu-item routerLink="/places" routerLinkActive="active">Places list</button>
   <button mat-menu-item routerLink="/place/create" routerLinkActive="active">New place</button>
 </mat-menu>
-<mat-menu #other3="matMenu">
-  <button mat-menu-item>List</button>
-  <button mat-menu-item>New</button>
+<mat-menu #article="matMenu">
+  <button mat-menu-item routerLink="/article" routerLinkActive="active">Create</button>
 </mat-menu>

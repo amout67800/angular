@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material';
-import { Place } from 'src/app/shared/classes/place';
-import { PlaceService } from 'src/app/services/place.service';
+import { Place } from '../../../core/classes/place';
+import { PlaceService } from '../../../services/place.service';
 
 @Component({
   selector: 'app-places-list',

@@ -1,4 +1,4 @@
-import { Place } from '../shared/classes/place';
+import { Place } from '../classes/place';
 
 export const PLACES: Place[] = [
     { id: 1, country: 'France', city: 'Paris', name: 'Tour Eiffel', lat: 48.858053, long: 2.294289 },

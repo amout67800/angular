@@ -1,4 +1,4 @@
-import { User } from '../shared/classes/user';
+import { User } from '../classes/user';
 
 export const USERS: User[] = [
   { id: 1,  firstname: 'Jean',      lastname: 'Dupont',     email:"jd@hotmail.fr" },

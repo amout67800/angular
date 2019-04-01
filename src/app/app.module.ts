@@ -8,22 +8,24 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+
 import { TableComponent } from './shared/components/table/table.component';
 import { MainMenuComponent } from './shared/components/main-menu/main-menu.component';
-
-import { UsersListComponent } from './common/components/users-list/users-list.component';
-import { TravelsListComponent } from './common/components/travels-list/travels-list.component';
-import { AdminAccountCreateComponent } from './common/components/admin-account-create/admin-account-create.component';
+import { UsersListComponent } from './public/components/users-list/users-list.component';
+import { TravelsListComponent } from './public/components/travels-list/travels-list.component';
+import { AdminAccountCreateComponent } from './public/components/admin-account-create/admin-account-create.component';
 import { MessagesComponent } from './shared/components/messages/messages.component';
 import { LoginComponent } from './shared/components/login/login.component';
-import { HomeComponent } from './common/components/home/home.component';
+import { HomeComponent } from './public/components/home/home.component';
 import { SignInComponent } from './shared/components/sign-in/sign-in.component';
 import { SignUpComponent } from './shared/components/sign-up/sign-up.component';
 import { ForgetPasswordComponent } from './shared/components/forget-password/forget-password.component';
-import { PlacesListComponent } from './common/components/places-list/places-list.component';
+import { PlacesListComponent } from './public/components/places-list/places-list.component';
 import { ActionsButtonsComponent, ActionsButtonsDialog } from './shared/components/actions-buttons/actions-buttons.component';
-import { TravelComponent } from './common/components/travel/travel.component';
-import { PlaceComponent } from './common/components/place/place.component';
+import { TravelComponent } from './public/components/travel/travel.component';
+import { PlaceComponent } from './public/components/place/place.component';
+import { ArticleComponent } from './public/components/article/article.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,8 @@ import { PlaceComponent } from './common/components/place/place.component';
     ActionsButtonsComponent,
     ActionsButtonsDialog,
     TravelComponent,
-    PlaceComponent
+    PlaceComponent,
+    ArticleComponent
   ],
   entryComponents: [ActionsButtonsDialog],
   imports: [
@@ -53,7 +56,8 @@ import { PlaceComponent } from './common/components/place/place.component';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    MaterialModule
+    MaterialModule,
+    CKEditorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
-import { COUNTRIES } from '../../../mocks/mock-countries'
+import { COUNTRIES } from '../../../core/mocks/mock-countries'
 
 @Component({
   selector: 'app-travel',
