@@ -1,6 +1,6 @@
 <div class="login-content">
-  <button mat-button (click)="displaySignContent('sign-in')">SIGN IN</button> |
-  <button mat-button (click)="displaySignContent('sign-up')">SIGN UP</button>
+  <button mat-stroked-button (click)="displaySignContent('sign-in')">SIGN IN</button>
+  <button mat-stroked-button color="primary" (click)="displaySignContent('sign-up')">SIGN UP</button>
   <div [ngSwitch]="choice">
     <app-sign-in *ngSwitchCase="'sign-in'"></app-sign-in>
     <app-sign-up *ngSwitchCase="'sign-up'"></app-sign-up>

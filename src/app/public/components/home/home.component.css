@@ -1,9 +1,15 @@
-.example-card {
-    max-width: 400px;
-  }
-  
-  .example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
-  }
-  
+.article-card {
+  max-width: 400px;
+  padding-bottom: 25px;
+  background-color: #F5F3F2;
+}
+.article-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+.article-actions {
+  text-align: center;
+} 
+.article-actions button {
+  margin: 0 20px 0 20px;
+}

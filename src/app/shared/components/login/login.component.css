@@ -5,10 +5,13 @@
   margin: auto;
   text-align: center;
 }
+.login-content button {
+  margin: 0 10px 0 10px;
+}
 .forget-pw {
   position: relative;
-  font-size: 10px;
-  top: -20px;
+  font-size: 12px;
+  top: -30px;
   left: 95px;
   cursor: pointer;
 }

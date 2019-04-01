@@ -14,7 +14,7 @@ export class ArticleComponent implements OnInit {
   articleForm = this.fb.group({
     title: ['', Validators.required],
     description: ['', Validators.required],
-    illustration: ['']
+    // illustration: ['']
   });
 
   constructor(private fb: FormBuilder) { }

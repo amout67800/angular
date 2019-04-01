@@ -1,9 +1,12 @@
 <div id="main-row">
-  <button mat-menu-item [matMenuTriggerFor]="travels">Travels</button>
-  <button mat-menu-item [matMenuTriggerFor]="users">Users</button>
-  <button mat-menu-item [matMenuTriggerFor]="account">Login</button>
-  <button mat-menu-item [matMenuTriggerFor]="places">Places management</button>
-  <button mat-menu-item [matMenuTriggerFor]="article">Article</button>
+  <button mat-menu-item routerLink="/home" routerLinkActive="active" id="home-btn">
+    <i class="material-icons">home</i>
+  </button>
+  <button mat-menu-item [matMenuTriggerFor]="travels" class="button">Travels</button>
+  <button mat-menu-item [matMenuTriggerFor]="users" class="button">Users</button>
+  <button mat-menu-item [matMenuTriggerFor]="account" class="button">Login</button>
+  <button mat-menu-item [matMenuTriggerFor]="places" class="button">Places management</button>
+  <button mat-menu-item [matMenuTriggerFor]="article" class="button">Article</button>
 </div>
 
 <mat-menu #travels="matMenu">
