@@ -14,7 +14,6 @@ import { TableComponent } from './shared/components/table/table.component';
 import { MainMenuComponent } from './shared/components/main-menu/main-menu.component';
 import { UsersListComponent } from './public/components/users-list/users-list.component';
 import { TravelsListComponent } from './public/components/travels-list/travels-list.component';
-import { AdminAccountCreateComponent } from './public/components/admin-account-create/admin-account-create.component';
 import { MessagesComponent } from './shared/components/messages/messages.component';
 import { LoginComponent } from './shared/components/login/login.component';
 import { HomeComponent } from './public/components/home/home.component';
@@ -34,7 +33,6 @@ import { ArticleComponent } from './public/components/article/article.component'
     MainMenuComponent,
     UsersListComponent,
     TravelsListComponent,
-    AdminAccountCreateComponent,
     MessagesComponent,
     LoginComponent,
     HomeComponent,

@@ -28,10 +28,10 @@ td, th {
   text-align: right;
 }
 .dataTable {
-  width: 70%; 
+  width: 85%; 
   float: left;
 }
 .actionsTable {
-  width: 30%; 
+  width: 15%; 
   float: left;
 }

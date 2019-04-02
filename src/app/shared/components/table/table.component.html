@@ -13,7 +13,7 @@
 </div>
 
 <div class="mat-elevation-z">
-  <div class="dataTable" [style.width]="actions[0].visibility ? '70%' : '100%'">
+  <div class="dataTable" [style.width]="actions[0].visibility ? '85%' : '100%'">
     <table mat-table [dataSource]="dataSource">
       <ng-container *ngFor="let column of columns" matColumnDef="{{column.name}}">
         <th mat-header-cell *matHeaderCellDef>{{column.label}}</th>

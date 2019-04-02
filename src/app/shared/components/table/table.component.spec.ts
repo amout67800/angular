@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TableComponent } from './table.component';
+import { MatFormFieldModule, MatInputModule, MatTableModule } from '@angular/material';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('TableComponent', () => {
   let component: TableComponent;
@@ -8,7 +10,13 @@ describe('TableComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TableComponent ]
+      imports: [
+        MatFormFieldModule,
+        MatInputModule,
+        MatTableModule
+      ],
+      declarations: [ TableComponent ],
+      schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
   }));

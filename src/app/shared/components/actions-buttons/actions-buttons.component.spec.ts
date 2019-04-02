@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ActionsButtonsComponent } from './actions-buttons.component';
+import { MatDialogModule } from '@angular/material';
 
 describe('ActionsButtonsComponent', () => {
   let component: ActionsButtonsComponent;
@@ -8,6 +9,7 @@ describe('ActionsButtonsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [ MatDialogModule ],
       declarations: [ ActionsButtonsComponent ]
     })
     .compileComponents();
