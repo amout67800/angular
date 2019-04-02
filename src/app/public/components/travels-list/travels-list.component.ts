@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material';
 import { Travel } from '../../../core/classes/travel';
-import { TravelService } from '../../../services/travel.service';
+import { TravelService } from '../../../shared/services/travel.service';
 
 @Component({
   selector: 'app-travels-list',

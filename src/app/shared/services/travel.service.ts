@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Travel } from '../core/classes/travel';
-import { TRAVELS } from '../core/mocks/mock-travels';
+import { Travel } from '../../core/classes/travel';
+import { TRAVELS } from '../../core/mocks/mock-travels';
 
 
 @Injectable({
