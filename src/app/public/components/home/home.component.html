@@ -1,17 +1,17 @@
-<div style="column-count:3; clear: both;">
-  <mat-card class="article-card" *ngFor="let advice of advices" style="margin: 0 auto 50px auto;">
+<div class="content">
+  <mat-card class="article-card" *ngFor="let article of articles" style="margin: 0 auto 50px auto;">
     <mat-card-header>
       <div mat-card-avatar class="article-header-image"></div>
       <mat-card-title>Christie Golden</mat-card-title>
       <mat-card-subtitle>Editor</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image src="../../../assets/images/advices.jpg" alt="{{advice.label}}">
+    <img mat-card-image src="../../../assets/images/advices.jpg" alt="{{article.label}}">
     <mat-card-content>
-      <p>{{advice.label}}</p>
+      <p>{{article.label}}</p>
     </mat-card-content>
-    <mat-card-actions class="article-actions">
-      <button mat-raised-button>LIKE</button>
-      <button mat-raised-button color="primary">SHARE</button>
+    <mat-card-actions>
+      <i class="material-icons">favorite</i><i class="likeTag">{{ article.likeNumber }}</i>
+      <i class="material-icons">favorite_border</i><i class="likeTag">{{ article.dislikeNumber }}</i>
     </mat-card-actions>
   </mat-card>
 </div>
